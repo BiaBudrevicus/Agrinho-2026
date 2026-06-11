@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrinho 2026 - Práticas Sustentáveis no Campo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header/Navegação -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="navbar-container">
+                <div class="logo">
+                    <h1>🌱 Agrinho 2026</h1>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#inicio" class="nav-link">Início</a></li>
+                    <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                    <li><a href="#artigos" class="nav-link">Artigos</a></li>
+                    <li><a href="#dicas" class="nav-link">Dicas</a></li>
+                    <li><a href="#contato" class="nav-link">Contato</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h2>Bem-vindo ao Agrinho 2026</h2>
+            <p>Transformando a agricultura com práticas sustentáveis para um futuro melhor</p>
+            <button class="cta-btn" onclick="document.getElementById('artigos').scrollIntoView({behavior: 'smooth'})">Explorar Conteúdo</button>
+        </div>
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre" class="about">
+        <div class="container">
+            <h2>Sobre Nós</h2>
+            <p>O Agrinho 2026 é uma plataforma dedicada a compartilhar conhecimento sobre agricultura sustentável. Nosso objetivo é conectar agricultores, consumidores e profissionais interessados em práticas que respeitam o meio ambiente e garantem produtividade.</p>
+            <div class="about-grid">
+                <div class="about-card">
+                    <h3>🌍 Sustentabilidade</h3>
+                    <p>Práticas que preservam o solo, água e biodiversidade</p>
+                </div>
+                <div class="about-card">
+                    <h3>📚 Educação</h3>
+                    <p>Conteúdo atualizado e baseado em pesquisas científicas</p>
+                </div>
+                <div class="about-card">
+                    <h3>🤝 Comunidade</h3>
+                    <p>Conectando produtores e consumidores conscientes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Artigos -->
+    <section id="artigos" class="articles">
+        <div class="container">
+            <h2>Artigos em Destaque</h2>
+            <div class="articles-grid" id="articlesGrid">
+                <!-- Artigos serão carregados aqui via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Dicas -->
+    <section id="dicas" class="tips">
+        <div class="container">
+            <h2>Dicas Práticas</h2>
+            <div class="tips-grid" id="tipsGrid">
+                <!-- Dicas serão carregadas aqui via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <h2>Fique por Dentro</h2>
+            <p>Receba as melhores dicas e artigos sobre agricultura sustentável</p>
+            <form class="newsletter-form" id="newsletterForm">
+                <input type="email" placeholder="Seu email" required>
+                <button type="submit">Inscrever-se</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="contact">
+        <div class="container">
+            <h2>Fale Conosco</h2>
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Agrinho - Agricultura Sustentável. Todos os direitos reservados.</p>
+            <div class="social-links">
+                <a href="#" target="_blank">Facebook</a>
+                <a href="#" target="_blank">Instagram</a>
+                <a href="#" target="_blank">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
